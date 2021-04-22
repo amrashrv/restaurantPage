@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector("#content"),n=(e,n,t)=>{const d=document.createElement(e);return d.innerHTML=n,d.style=t,d};e.appendChild(n("div","this is the restaurant page","color: red ; background: blue")),e.appendChild(n("span","navMenu")),e.appendChild(n("div","content")),e.appendChild(n("div","footer"))})();
