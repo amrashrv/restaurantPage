@@ -1,28 +1,13 @@
-import headerContent from './components/header/header';
+import headerContent from "./components/header/header";
+import {firstTab, secondTab} from './components/nav/nav'
 
-const content = document.querySelector("#content");
+const initializeApp = () => {
+    const content = document.querySelector("#content");
+    content.appendChild(headerContent());
+    content.appendChild(firstTab());
+    content.appendChild(secondTab());
 
-const contentStarter = ( tag, text, style) => {
-    const element = document.createElement(tag);
-    element.innerHTML = text;
-    element.style = style
-    return element;
 }
+initializeApp();
 
-function header () {
-    return contentStarter("div", headerContent(), ("color: red ; background: blue"));
-}
-function navMenu () {
-    return contentStarter("span", "navMenu")
-}
-function container () {
-    return contentStarter("div", "content")
-}
-function footer () {
-    return contentStarter("div", "footer")
-}
 
-content.appendChild(header());
-content.appendChild(navMenu());
-content.appendChild(container());
-content.appendChild(footer())

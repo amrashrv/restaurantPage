@@ -22,7 +22,9 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
+    "css-loader": "^5.2.4",
     "loadash": "^1.0.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "style-loader": "^2.0.0"
   }
 }
